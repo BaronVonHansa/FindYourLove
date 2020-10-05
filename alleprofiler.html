@@ -1,0 +1,37 @@
+<!DOCUTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Alle profiler</title>
+</head>
+<body>
+    <h1>Brukere</h1>
+    
+    <div id="resultat"></div>
+        <script>
+        
+        var resultat = document.getElementById('resultat');
+        var profilNavn = ['Stian', 'Robert', 'Kjetil', 'Sandra', 'Lene', 'Rita'];
+        var profilAlder = ['23 år', '25år', '36 år', '34 år', '24 år', '22 år'];
+        var profilBio = ['Alphamale fra Oslo ute etter en gøy kveld', 'Egentlig ganske snill', 'Nordsjøarbeider med naust', 'Er ute etter en Vin Vin situasjon', 'Jordnær og glad i tur','Koden min funker ikke, og jeg aner ikke hvorfor' ];
+        var profilSex = ['Mann', 'Mann', 'Mann', 'Kvinne', 'Kvinne', 'Kvinne'];
+        var profilBilder = ['images/man1.jpg', 'images/man2.jpg', 'images/man3.jpg', 'images/woman1.jpg', 'images/woman2.jpg','images/woman3.jpg'];
+        
+        
+    for (i = 0; i < profilNavn.length; i++){
+        resultat.innerHTML += 
+            `<h2>${profilNavn[i]}</h2>
+                <h2>${profilAlder[i]}</h2>
+                <img src='${profilBilder[i]}'>
+                <h4>${profilBio[i]}</h4>    
+        
+        `;
+        
+    }
+    
+    </script>
+    </body>
+
+
+</html>
+
