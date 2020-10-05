@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 	<title>Et forslag</title>
 </head>
-<body>
 
+<body>
 	<div>
-		
 		<header>
 			<h1>FindYourLove</h1>
 		</header>
-		
+
 		<nav>
 			<ul>
 				<li><a href="alle-profiler.html">Alle profiler</a></li>
-				<li><a href="dagens-profil.html">Dagens profil</a></li>
+				<li><a href="valgfri-funksjonalitet.html">TEMP</a></li>
 			</ul>
 		</nav>
-		
+
 		<main>
-		
 			<section>
 				<label>Tast inn ønsket alder</label>
-				<input type="text"><br>
-				<label>Mann eller kvinne?</label>
-				<input type="text">
-				<input type="button" value="Vis forslag">
+				<input type="text" id="profil_alder" /><br />
+				<label>Mann eller kvinne?</label><br>
+				<input type="radio" id="male" name="gender" value="male" />
+				<label for="male">Male</label><br />
+				<input type="radio" id="female" name="gender" value="female" />
+				<label for="female">Female</label><br />
+				<input type="button" onclick="profileButtonClick()" id="vis_forslag" value="Vis forslag" />
 			</section>
-			
+
 			<section>
-				<!-- Skriv ut en profil her -->
+				<div id="forslag_resultat"></div>
 			</section>
-			
 		</main>
-		
+		<script src="index.js"> </script>
 	</div>
-	
 </body>
+
 </html>
