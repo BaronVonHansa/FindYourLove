@@ -1,5 +1,7 @@
 
-/* kommentarer */
+/**
+ * Profilene er objekter inni array
+ */
 
 let profilArray = [
 	{
@@ -41,7 +43,7 @@ let profilArray = [
 		profilNavn: "Rita",
 		profilAlder: 22,
 		profilBio: "Koden min fungerer ikke, og jeg aner ikke hvorfor",
-		sex: true,
+		sex: true,  
 		profilBilde: "images/woman3.jpg",
 	},
 ];
