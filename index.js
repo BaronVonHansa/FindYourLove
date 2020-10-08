@@ -103,3 +103,12 @@ function profileButtonClick() {
 		forslag_resultat.innerHTML += `<h1>Venligst velg et kjønn!</h1>`
 	}
 }
+
+
+function visLykken (){ 
+	let resultat =document.getElementById('forslag_resultat') 
+		resultat.innerHTML='';
+	{ profilePrinter(resultat, profilArray[Math.floor(Math.random()* profilArray.length)] );
+
+	}
+}
